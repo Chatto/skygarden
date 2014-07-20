@@ -1,0 +1,14 @@
+<?
+class ProductType extends AppModel {
+	public $name = 'ProductType';
+    public $hasMany = array(
+		'Product' => array(
+			'className' => 'Product',
+			'foreignKey' => 'type_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		)
+	);
+}
+?>
